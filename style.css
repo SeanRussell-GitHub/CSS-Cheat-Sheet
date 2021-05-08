@@ -13,29 +13,74 @@
     /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     margin-top: 2%;
+    background:darkcyan;
   }
   
+  h2 {
+    text-align: center;
+    font-size: small;
+  }
+
   .main-header {
     display: flex;
     /* Defines how to distribute the empty space between child elements */
     justify-content: center;
-    padding: 60px;
+    padding: 10px;
     background: #4c5358;
     color: #fff;
   }
   
-  .card {
+  .topcard {
     /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     flex: 1 0 200px;
     padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-      }
+    font-size: small;
+    text-align: left;
+    border-style: double;
+    border-width: 2px;
+    width: 300px;
+    height: 250px;
+  }
+   
+  .card {
+    /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    flex: 33%;
+    padding: 5px;
+    font-size: smaller;
+    text-align: left;
+    border-style: double;
+    border-width: 2px;
+    width: 300;
+    height: auto;
+  }
   
-  .card header {
-    padding: 20px;
+  .topcard header {
+    position: relative;
+    margin-top: -20px;
+    padding: 10px;
     background: green;
-    color: #fff;
+    color: whitesmoke;
+    border-style: double;
+    border-width: 2px;
+  }
+
+  .card header {
+    position: relative;
+    margin-top: -20px;
+    padding: 10px;
+    background: green;
+    color: whitesmoke;
+    border-style: double;
+    border-width: 2px;
+  }
+
+  .inset {
+    padding: 2px;
+    background: goldenrod;
+    color: gray;
+    border-style: dashed;
+    border-radius: 5%;
+    border-width: 2px;
   }

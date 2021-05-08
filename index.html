@@ -5,27 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>CSS Cheatsheat</title>
 </head>
 <body>
     <header class="main-header">
-        <h1>Page layouts of 3 devices </h1>
-      </header>
-  
+        <h1 center>CSS Cheatsheat</h1>
+    </header>    
+        <h2>For all of your favorite CSS code here is a cheat sheet to keep track of the syntax!</h2>
+      <main>
+        <section class="topcard">
+          <header>Flexbox Row</header>
+          <p class="inset">
+            Use these three properties to create a Flexbox row layout.
+          </p>
+          <p> 
+            .row {<br>
+            <blockquote>flex;<br><br>
+              flex-direction: row;<br><br>
+              flex-wrap: wrap;</blockquote>
+            }</p>
+        </section>
+        <section class="topcard">
+          <header>Flexbox Column</header>
+          <p class="inset">
+            Use this to create a Flexbox column layout.
+          </p>
+          <p>
+            .column {<br>
+            <blockquote>display: flex;<br><br>
+              flex-direction: column<br></blockquote>
+            }<br>
+          </p>
+        </section>
+        <section class="topcard">
+          <header>CSS Grid Layout</header>
+          <p class="inset">
+            Build a 12-column layout using CSS Grid.
+          </p>
+          <p>
+            .grid {<br>
+             <blockquote>display: grid;<br><br>
+              width: 100%;<br><br>
+              grid-template-columns:<br></blockquote>
+            repeat(12, 1fr);<br>
+            }<br>
+          </p>
+        </section>
+      </main>
       <main>
         <section class="card">
-          <header>Desktop</header>
-          <img src="snippets\01-app-desktop.png" alt="desktop view" width="500" height="600">
+          <header>Linear Gradients</header>
+          <p class="inset">
+            This will create a background linear gradient from top to bottom.
+          </p>
+          <p> 
+            .linear-gradient-background {<br>
+            <blockquote>background-image: linear-gradient(
+            <blockquote>rgba(232, 102, 236, 0.3) 0%<br><br>
+                        rgba(232, 102, 236, 0.6) 100%);<br><br>
+            </blockquote>
+            }</p>
         </section>
         <section class="card">
-          <header>Tablet</header>
-          <img src="snippets\02-app-tablet.png" alt="tablet view" width="300" height=auto>
+          <header>Box Transition Glow</header>
+          <p class="inset">
+            Use transition and box shadows to glow on hover.
+          </p>
+          <p>
+            .code-card .card-header {<br>
+            <blockquote>border-radius: 8px;<br><br>
+              transition: all 0.5s ease-in-out;<br></blockquote>
+            }<br><br>
+            .code-card:hover,<br><br>
+            .code-card:hover .card-header {<br><br>
+            <blockquote>box-shadow: inset 0px 0px 8px<br><br>
+              rgba(232, 102, 236, 1). 0 0 15px<br><br>
+              rgba(232, 102, 236, 1);<br></blockquote>
+            }
+          </p>
         </section>
         <section class="card">
-          <header>Mobile</header>
-          <img src="snippets\03-app-mobile.png" alt="tablet view" width="300" height=auto>
+          <header>Overlay Card with Title</header>
+          <p class="inset">
+            Use position properties and negative margins to raise elements higher than their natural starting point.
+          </p>
+          <p>
+            .grid {<br>
+             <blockquote>display: grid;<br><br>
+              width: 100%;<br><br>
+              grid-template-columns:<br></blockquote>
+            repeat(12, 1fr);<br>
+            }<br>
+          </p>
         </section>
-
       </main>
 </body>
 </html>
