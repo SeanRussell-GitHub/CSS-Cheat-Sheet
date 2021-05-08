@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
-    <title>CSS Cheatsheat</title>
+    <title>CSS Cheatsheet</title>
 </head>
 <body>
     <header class="main-header">
-        <h1 center>CSS Cheatsheat</h1>
+        <h1 center>CSS Cheatsheet</h1>
     </header>    
         <h2>For all of your favorite CSS code here is a cheat sheet to keep track of the syntax!</h2>
       <main>
@@ -30,11 +30,11 @@
           <p class="inset">
             Use this to create a Flexbox column layout.
           </p>
-          <p>
+           <p>
             .column {<br>
             <blockquote>display: flex;<br><br>
               flex-direction: column<br></blockquote>
-            }<br>
+            }<br><br>
           </p>
         </section>
         <section class="topcard">
@@ -42,13 +42,14 @@
           <p class="inset">
             Build a 12-column layout using CSS Grid.
           </p>
-          <p>
+          <p id="button3">
             .grid {<br>
              <blockquote>display: grid;<br><br>
               width: 100%;<br><br>
               grid-template-columns:<br></blockquote>
             repeat(12, 1fr);<br>
-            }<br>
+            }<br><br>
+            <button onclick="copyToClipboard('#button3')" >Copy Snippet</button>
           </p>
         </section>
       </main>
@@ -58,20 +59,21 @@
           <p class="inset">
             This will create a background linear gradient from top to bottom.
           </p>
-          <p> 
+          <p id="button4"> 
             .linear-gradient-background {<br>
             <blockquote>background-image: linear-gradient(
             <blockquote>rgba(232, 102, 236, 0.3) 0%<br><br>
                         rgba(232, 102, 236, 0.6) 100%);<br><br>
             </blockquote>
             }</p>
+            <button onclick="copyToClipboard('#button4')" >Copy Snippet</button>
         </section>
         <section class="card">
           <header>Box Transition Glow</header>
           <p class="inset">
             Use transition and box shadows to glow on hover.
           </p>
-          <p>
+          <p id="button5">
             .code-card .card-header {<br>
             <blockquote>border-radius: 8px;<br><br>
               transition: all 0.5s ease-in-out;<br></blockquote>
@@ -83,19 +85,21 @@
               rgba(232, 102, 236, 1);<br></blockquote>
             }
           </p>
+          <button onclick="copyToClipboard('#button5')" >Copy Snippet</button>
         </section>
         <section class="card">
           <header>Overlay Card with Title</header>
           <p class="inset">
             Use position properties and negative margins to raise elements higher than their natural starting point.
           </p>
-          <p>
+          <p id="button6">
             .grid {<br>
              <blockquote>display: grid;<br><br>
               width: 100%;<br><br>
               grid-template-columns:<br></blockquote>
             repeat(12, 1fr);<br>
             }<br>
+            <button onclick="copyToClipboard('#button6')" >Copy Snippet</button>
           </p>
         </section>
       </main>

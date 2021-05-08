@@ -21,6 +21,16 @@
     font-size: small;
   }
 
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    background-color: yellowgreen;
+    cursor:pointer;
+    border-radius:8px;
+  }
+
   .main-header {
     display: flex;
     /* Defines how to distribute the empty space between child elements */
@@ -83,4 +93,8 @@
     border-style: dashed;
     border-radius: 5%;
     border-width: 2px;
+  }
+
+  #myInput {
+    value="ugh!"
   }
